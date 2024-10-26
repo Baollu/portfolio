@@ -1,0 +1,35 @@
+/* main page css */
+
+.wallpaper {
+    background-color: black; /* Définit le fond de l'élément sur la couleur noire */
+    color: white; /* Définit la couleur du texte en blanc pour un bon contraste avec le fond */
+    display: flex; /* Transforme l'élément en conteneur flex pour faciliter l'alignement des éléments enfants */
+    justify-content: center; /* Centre les éléments enfants horizontalement dans le conteneur */
+    align-items: center; /* Centre les éléments enfants verticalement dans le conteneur */
+    height: 100vh; /* Définit la hauteur du conteneur pour qu'il couvre toute la hauteur de la fenêtre */
+    margin: 0; /* Enlève toute marge par défaut autour du conteneur */
+    flex-direction: column; /* Aligne les éléments enfants verticalement, du haut vers le bas */
+    text-align: center; /* Centre le texte à l'intérieur de l'élément */
+    position: relative; /* Permet aux éléments enfants positionnés en "absolute" de se baser sur ce conteneur pour se positionner */
+}
+
+.title {
+    font-size: 3rem; /* Augmente la taille de la police du titre pour le rendre bien visible */
+    margin: 0; /* Supprime toute marge autour du titre pour un meilleur positionnement */
+    position: relative; /* Permet de positionner l'élément par rapport à sa position par défaut dans le flux du document */
+    bottom: 50px; /* Remonte le titre de 50 pixels par rapport à sa position normale */
+}
+
+.picture {
+    width: 150px; /* Ajuste la taille pour agrandir le cercle */
+    height: 150px;
+    border-radius: 50%; /* Garde le cercle */
+    overflow: hidden;
+    background-image: url("../../public/boris.cheng@epitech.eu.jpg"); /* Ajoute l'URL de l'image ici */
+    background-size: cover; /* Adapte l'image pour remplir le cercle */
+    background-position: center; /* Centre l'image dans le cercle */
+    position: absolute;
+    top: 20%; /* Positionne un peu en haut du centre */
+    transform: translateX(-50%); /* Centre horizontalement l'image */
+    left: 50%; /* Position horizontale au centre de l'écran */
+}
