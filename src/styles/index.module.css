@@ -14,15 +14,15 @@
 }
 
 .title {
-    font-size: 3rem; /* Augmente la taille de la police du titre pour le rendre bien visible */
+    font-size: 1rem; /* Augmente la taille de la police du titre pour le rendre bien visible */
     margin: 0; /* Supprime toute marge autour du titre pour un meilleur positionnement */
     position: relative; /* Permet de positionner l'élément par rapport à sa position par défaut dans le flux du document */
     bottom: 50px; /* Remonte le titre de 50 pixels par rapport à sa position normale */
 }
 
 .picture {
-    width: 150px; /* Ajuste la taille pour agrandir le cercle */
-    height: 150px;
+    width: 180px; /* Ajuste la taille pour agrandir le cercle */
+    height: 180px;
     border-radius: 50%; /* Garde le cercle */
     overflow: hidden;
     background-image: url("../../public/boris.cheng@epitech.eu.jpg"); /* Ajoute l'URL de l'image ici */
@@ -32,4 +32,14 @@
     top: 20%; /* Positionne un peu en haut du centre */
     transform: translateX(-50%); /* Centre horizontalement l'image */
     left: 50%; /* Position horizontale au centre de l'écran */
+}
+
+.reseau {
+    width : 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
 }
