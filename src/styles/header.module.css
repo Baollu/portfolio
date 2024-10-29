@@ -1,0 +1,6 @@
+.header {
+    display: flex;                 /* Utilise le modèle de boîte flex pour aligner les éléments en ligne */
+    justify-content: space-between; /* Répartit les éléments à gauche et à droite avec de l'espace entre eux */
+    align-items: center;           /* Centre verticalement les éléments à l'intérieur de .header */
+    font-family: cursive;          /* Définit la police d'écriture en "cursive" pour un style manuscrit */
+}
