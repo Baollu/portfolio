@@ -1,6 +1,7 @@
 import styles from '../styles/index.module.css'
 import Header from './component/header';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function home() {
   return (
@@ -23,8 +24,25 @@ export default function home() {
             <Image src='/linkedin.png' alt="logo linkedin" width={40} height={40} />
           </a>
         </div>
-        <section className={styles.portail}>
-          <p>Présentation</p>
+        <div>
+          <Link href="/presentation">
+            <p>Présentation</p>
+          </Link>
+        </div>
+        <div>
+          <Link href="project">
+            <p> Mes projets</p>
+          </Link>
+        </div>
+        <section>
+          <Link href="competence">
+            <p> Mes compétences</p>
+          </Link>
+        </section>
+        <section>
+          <Link href="futur">
+            <p> Mes Objectif</p>
+          </Link>
         </section>
       </section>
     </>
